@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+ 
+<html ng-app="testApp">
+    <head>
+        <title>Angular Template with browserify</title>
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex" />
+		<meta http-equiv="PRAGMA" content="no-cache">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="X-Frame-Options" content="deny">
+		<meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Include external styles here -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- Include external scripts here (though recommended to find there npm package and use it from there) -->
+        <!-- <script src="/js/d3.min.js"></script> -->
+
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+        <script src="/js/bundle.js"></script>
+        <!-- <script src="/js/bundle.min.js"></script> -->
+    </head>
+    <body ng-controller='MainCtrl'>
+        <div alert-directive></div>
+        <div loader-directive></div>
+        <div class="base-view" ui-view></div>
+    </body>
+</html>

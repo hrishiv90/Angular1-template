@@ -1,0 +1,24 @@
+{
+  "name": "AngularTemplate",
+  "version": "0.1.0",
+  "description": "Angular template for development purpose",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TCSer",
+  "devDependencies": {
+    "angular": "^1.6.0",
+    "angular-ui-router": "^0.3.2",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^4.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-uglify": "^2.0.0",
+    "run-sequence": "^1.2.2"
+  }
+}

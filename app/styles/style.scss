@@ -1,0 +1,23 @@
+
+body {
+	background: none rgba(0,0,0,0.3);
+	padding: 70px 0;
+}
+
+.logout-btn {
+	margin: 8px;
+}
+.alert {
+    margin: 100px auto;
+    width: auto;
+    max-width: 700px;
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.65);
+	z-index: 1100;
+}

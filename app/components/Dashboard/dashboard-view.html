@@ -1,0 +1,31 @@
+<!-- Header starts -->
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <div class="navbar-brand">
+        <span class="title-styling">{{ pageTitle }}</span>
+      </div>
+      <ul class="nav navbar-nav navbar-left">
+        <li><a ui-sref="dashboard" class="">Dashboard</a></li>
+      </ul>
+    </div>
+    <a ui-sref="login" class="pull-right btn btn-danger logout-btn">logout</a>
+  </nav>
+</header>
+<!-- Header ends -->
+<div ui-view>
+  <div class="container-fluid">
+    This is dashboard (home page after login success)
+    <a ui-sref="dashboard.nested-page">Nested Page</a>
+  </div>
+</div>
+
+<!-- Footer starts -->
+<footer>
+  <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <div class="container-fluid">
+      &copy; All rights reserved.
+    </div>
+  </nav>
+</footer>
+<!-- Footer ends -->

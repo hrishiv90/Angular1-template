@@ -1,0 +1,52 @@
+
+body {
+	background: none rgba(0,0,0,0.2);
+	padding: 70px 0;
+}
+
+.logout-btn {
+	margin: 8px;
+}
+.alert {
+    margin: 100px auto;
+    width: auto;
+    max-width: 700px;
+}
+.alert img {
+    width: 35px;
+    margin: 0 5px;
+    filter: brightness(0);
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.65);
+	z-index: 1100;
+}
+.alert.panel {
+	text-align: left;
+}
+.alert.panel button {
+	margin-right: 15px;
+	padding: 5px;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1.2s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -40px 0 0 -40px;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,19 @@
+<div class="container-fluid login-page">
+        <div class="login-wrapper col-sm-4 col-sm-offset-4">
+            <h2 class="text-center">Login</h2>
+            <br/>
+            <form name="form" ng-submit="login()" role="form">
+                <div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
+                    <input type="text" name="username" id="username" class="form-control" ng-model="username" required placeholder="AD Username" />
+                    <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Username is required</span>
+                </div>
+                <div class="form-group" ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+                    <input type="password" name="password" id="password" class="form-control" ng-model="password" required placeholder="AD Password" />
+                    <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" ng-disabled="form.$invalid || dataLoading" class="btn btn-primary btn-wide btn-style">Login</button>
+                </div>
+            </form>
+        </div>
+</div>
